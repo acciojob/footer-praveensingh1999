@@ -1,75 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 footer {
-  background-color: #000;
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction:column;
 }
 
-.footer-container {
-  padding: 40px 60px;
+/* Content Styles */
+.content {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
-.company-logo {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 30px;
+/* Top Section */
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
-.footer-sections {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.logo-details {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.footer-column {
-  flex: 1;
-  min-width: 150px;
-  margin-bottom: 20px;
+/* Link Boxes */
+.link-boxes {
+    display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
 }
 
-.footer-column p {
-  margin: 8px 0;
-  color: #ccc;
-  font-size: 14px;
-}
-
-.heading {
-  font-weight: bold;
-  position: relative;
-  margin-bottom: 12px;
+.link-boxes div {
+   color: white;
+	
+  font-family: sans-serif;
   font-size: 16px;
+  position: relative;
+  padding-bottom: 10px;
 }
 
-.heading::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 25px;
-  height: 2px;
-  background-color: white;
+.link-boxes h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
 }
 
-.social-icons {
-  margin-top: 30px;
+/* Contact Section */
+.contact {
+    margin: 20px 0;
 }
 
-.social-icons i {
-  font-size: 20px;
-  color: white;
-  background-color: #444;
-  border-radius: 50%;
-  padding: 10px;
-  margin-right: 10px;
+/* Media Icons */
+.media-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.footer-bottom {
-  background-color: #2c2f36;
-  display: flex;
+.media-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Bottom Details */
+.bottom-details {
+   display: flex;
   justify-content: space-between;
-  padding: 12px 20px;
+   
+  padding: 10px 20px;
+  color: #ccc; /* light text */
   font-size: 14px;
-  color: #aaa;
 }
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     .link-boxes {
         flex-direction: column;
